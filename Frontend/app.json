@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "Townify",
+    "slug": "townify",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "townify",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0F1629"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.townify.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Townify needs camera access to capture photos for complaints and service requests.",
+        "NSPhotoLibraryUsageDescription": "Townify needs photo library access to attach images to your reports.",
+        "NSLocationWhenInUseUsageDescription": "Townify needs your location to send SOS alerts and tag nearby issues."
+      }
+    },
+    "android": {
+      "package": "com.townify.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.NOTIFICATIONS",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Townify to access your camera to capture photos for reports."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Townify to access your photos to attach images to complaints and requests.",
+          "cameraPermission": "Allow Townify to access your camera to capture photos for reports."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Townify to use your location for SOS alerts and location tagging."
+        }
+      ],
+      "expo-notifications",
+      "expo-image",
+      "expo-secure-store",
+      "expo-splash-screen"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://replit.com/"
+      },
+      "eas": {
+        "projectId": "15920810-a60e-4672-b0c1-c3cc0be9b418"
+      }
+    }
+  }
+}

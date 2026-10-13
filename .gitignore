@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment files (NEVER commit secrets to GitHub)
+.env
+.env*.local
+*/.env
+*/.env*.local
+
+# Unrelated project folders
+Zoo-Code/
+.agents/
+*.tmp
+
+# Expo & Metro
+.expo/
+*/.expo/
+.metro-health-check*
+
+# Builds & Outputs
+dist/
+*/dist/
+build/
+web-build/
+*/web-build/
+
+# Uploads & Logs
+uploads/
+*/uploads/
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS generated
+.DS_Store
+Thumbs.db

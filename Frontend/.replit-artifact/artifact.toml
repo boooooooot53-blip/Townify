@@ -1,0 +1,27 @@
+kind = "mobile"
+previewPath = "/"
+title = "Townify"
+version = "1.0.0"
+id = "artifacts/townify"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/" ]
+localPort = 22095
+
+[services.development]
+run = "pnpm --filter @workspace/townify run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/townify", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/townify", "run", "serve" ]
+
+[services.env]
+PORT = "22095"
+BASE_PATH = "/"
