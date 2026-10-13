@@ -11,6 +11,12 @@
       "distribution": "internal",
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://townify-backend-2939.onrender.com/api/v1",
+        "EXPO_PUBLIC_SOCKET_URL": "https://townify-backend-2939.onrender.com",
+        "EXPO_PUBLIC_CLOUDINARY_CLOUD_NAME": "anirsvnp",
+        "EXPO_PUBLIC_CLOUDINARY_UPLOAD_PRESET": "townify_data"
       }
     },
     "production": {}
