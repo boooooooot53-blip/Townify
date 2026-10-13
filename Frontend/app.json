@@ -7,12 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "townify",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#0F1629"
-    },
+
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.townify.app",
@@ -68,7 +63,14 @@
       "expo-notifications",
       "expo-image",
       "expo-secure-store",
-      "expo-splash-screen"
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#0F1629"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

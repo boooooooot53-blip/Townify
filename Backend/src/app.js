@@ -27,7 +27,7 @@ app.use(
         origin === clientUrl ||
         /^http:\/\/(localhost|127\.0\.0\.1|192\.168\.\d+\.\d+|10\.\d+\.\d+\.\d+)(:\d+)?$/.test(origin);
 
-      if (isAllowed) {
+      if (clientUrl === '*' || isAllowed) {
         return callback(null, true);
       }
       return callback(null, false);
